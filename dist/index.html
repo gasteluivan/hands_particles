@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Strange Magic Particles</title>
+    <!-- Version parameter for cache busting -->
+    <link rel="stylesheet" href="styles.css?v=1.0.3">
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+    <video id="webcam" autoplay playsinline></video>
+
+    <div id="instructions">
+        <h3>✨ Magic Controls</h3>
+        <ul>
+            <li>Mano abierta → Expandir</li>
+            <li>Puño cerrado → Comprimir</li>
+            <li>Girar muñeca → Rotar</li>
+            <li>Mover mano → Mover</li>
+        </ul>
+    </div>
+
+    <div id="status">Inicializando...</div>
+    <div class="loading" id="loading">Cargando...</div>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- MediaPipe Hands -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+    <!-- App Script with version for cache busting -->
+    <script src="app.js?v=1.0.3"></script>
+</body>
+
+</html>
